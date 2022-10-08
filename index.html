@@ -36,10 +36,56 @@ h3{
   padding:5%;
   margin-left:1%;
 }
+.tablediv{
+display:flex;
+flex-wrap:wrap
+}
 
+.skillsdiv{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:5%;
+  font-size:20px;
+  font-family:'Poppins',sans-serif;
+}
 
 
 @media screen and (max-width: 500px) {
+.skills{
+  width:85%;
+  margin-bottom: 5%;
+}
+.img{
+  width: 200px;
+      margin-left: 90px;
+      padding: 3%;
+  }
+
+}
+
+
+
+.table{
+  width:10%;
+
+  padding:0%;
+  margin-left:0 !important;
+}
+.tablediv{
+  display:flex;
+  flex-wrap:wrap;
+  width:20%%
+}
+
+td,th{
+  padding:15px;
+}
+.skillsdiv{
+  margin-bottom:5%;
+  font-size:17px;
+
+}
+
 
 }
 
@@ -51,7 +97,7 @@ h3{
 <h2 style="text-align:center;color:green">PORTFOLIO</h2>
 <hr>
 
-<div style="display:flex;flex-wrap:wrap">
+<div class="tablediv">
 
 <div class=img>
 <image src="student.png" width="200" height="200"/>
@@ -89,13 +135,14 @@ h3{
    <td>8.0</td>
  </tr>
   </table>
+
   </div>
   </div>
   <br>
   <br>
 
 
-<div style="display:flex;flex-wrap:wrap;margin-bottom:5%;font-size:20px;font-family:'Poppins',sans-serif">
+<div class="skillsdiv">
 
 <div class=skills>
 <ul>
@@ -107,7 +154,8 @@ h3{
 </ul>
 </div>
 
-<div  style="border:1px solid black; width:37% ; padding:5%;margin-left:1%;">
+
+<div class="skills">
 <ul>
 <h3>projects</h3>
 <li><b>bounsn:platform where you can learn programming languages</b></li>
@@ -119,10 +167,10 @@ h3{
 </div>
 
 
-<div style="display:flex;flex-wrap:wrap;margin-bottom:5% ;font-size:20px;font-family:'Poppins',sans-serif;">
+<div class="skillsdiv">
 
 
-<div style="border:1px solid black; width:37% ; padding:5%;margin-left:1%;">
+<div class="skills">
 <ol>
 <h3 > certifications</h3>
 <li><b>Udacity-front end nano degree</b></li>
@@ -132,7 +180,7 @@ h3{
 </ol>
 </div>
 
-<div  style="border:1px solid black; width:37% ; padding:5%;margin-left:1%;">
+<div class="skills">
 <ol>
 <h3 >hobbies</h3>
 <li><b>Reading books</b></li>
