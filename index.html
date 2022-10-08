@@ -45,7 +45,9 @@ h3{
 display:flex;
 flex-wrap:wrap
 }
-
+.table_content{
+  width: 60%;
+}
 .skillsdiv{
   display:flex;
   flex-wrap:wrap;
@@ -56,36 +58,16 @@ flex-wrap:wrap
 
 
 @media screen and (max-width: 500px) {
-h2{
-  "text-align:center;
-
-}
 
 .skills{
   width:85%;
   margin-bottom: 5%;
 }
 .img{
-  width: 200px;
+      width: 200px;
       margin-left: 90px;
       padding: 3%;
   }
-
-
-
-
-
-.table{
-  width:10%;
-
-  padding:0%;
-  margin-left:0 !important;
-}
-.tablediv{
-  display:flex;
-  flex-wrap:wrap;
-  width:20%%
-}
 
 td,th{
   padding:15px;
@@ -93,9 +75,12 @@ td,th{
 .skillsdiv{
   margin-bottom:3%;
   font-size:17px;
-  margin-left:15px
+  margin-left:15px;
 
-
+}
+.table_content{
+  overflow-x: auto;
+    width: 100%;
 }
 
 
@@ -106,7 +91,7 @@ td,th{
 </style>
 </head>
 <body>
-<h2 class="heading"">PORTFOLIO</h2>
+<h2 class="heading">PORTFOLIO</h2>
 <hr>
 
 <div class="tablediv">
@@ -117,8 +102,8 @@ td,th{
 <h4>student &web developer<h4>
 </div>
 
-<div style="width:68%;">
-<table class=table>
+<div class="table_content">
+<table class="table">
 <tr>
   <th>Education</th>
   <th>School/college</th>
